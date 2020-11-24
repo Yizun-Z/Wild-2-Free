@@ -1,0 +1,235 @@
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+body {
+    font-size: 1.8vw;
+    font-family: "Montserrat", sans-serif;
+    color: #111111;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 2.8vw;
+}
+
+h4 {
+    font-size: 2vw;
+}
+
+h5 {
+    font-size: 1.6vw;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*--------------------------------
+Header
+--------------------------------*/
+
+nav {
+    height: 100px;
+    /* background-color: blanchedalmond; */
+    margin: 10px auto;
+}
+
+.sitelogo {
+    width: 250px;
+}
+
+nav a {
+    float: left;
+    /* font-weight: 600;
+    line-height: 100px;
+    text-transform: uppercase;
+    text-decoration: none ;
+    color: #111111; */
+    /* background-color: blueviolet; */
+}
+
+.nav-page {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111111;
+    padding: 0 20px;
+}
+
+.nav-page:hover {
+    transition: all 0.3s ease;
+    background-color: #D7C79E;
+}
+
+.wrapper {
+    float: right;
+    padding: 20px 20px;
+}
+
+.wrapper button {
+    font-size: 2.8rem;
+    color: white;
+    background-color: #C2907D;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icon {
+    display: none;
+}
+
+.fa fa-bars {
+    color: black;
+}
+
+@media screen and (max-width: 920px) {
+    .nav-page {
+        display: none;
+    }
+    .icon {
+        padding: 10px 0;
+        float: right;
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 20px 0;
+    }
+    .sitelogo {
+        margin: 10px 0;
+        width: 150px;
+    }
+    .wrapper button {
+        font-size: 1.5rem;
+        position: absolute;
+        left: 45%;
+    }
+}
+
+/*--------------------------------
+Banner
+--------------------------------*/
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 1em 0;
+}
+
+.banner{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: auto;
+    
+}
+
+.btn {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #a38f69;
+    color: #ffffff;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 1.5vw 2.5vw;
+    border: none;
+    cursor: pointer;
+}
+
+.slogan {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/*-----------------------------
+News & Blog
+-----------------------------*/
+
+.news {
+    text-align: center;
+    line-height: 20px;
+    padding-top: 60px;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.row{
+    box-sizing: border-box;
+    padding: 30px 0px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.column {
+    float: left;
+    width: 33%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+
+.poster {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+
+.text-container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+
+.text-container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}

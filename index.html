@@ -2,65 +2,114 @@
 <html lang="en">
 
 <head>
-	<!-- Site information -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Wild 2 Free</title>
+    <!-- Site information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild 2 Free</title>
 
-	<!-- CSS Library -->
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
+    <!-- CSS Library -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Favicon -->
-	<link rel="icon" href="images/favicon.png">
-	<link rel="apple-touch-icon" href="images/apple-icon.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="images/icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/icon-114x114.png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon-114x114.png">
 
 </head>
 
 <body>
-    <header id="top" class="top-header">
+    <header class="top-header">
         <!-- Navigation -->
         <nav class="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Site Logo">
-                </a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a>
-                        </li>
-                        <li><a href="could pets.html">Cloud ets</a></li>
-                    </ul>
-                    <div class="nav navbar-nav navbar-right search-nav">
-                        <a id="donate button" href="#"> <button>Donate</button></a>
-                    </div>
-                </div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Site Logo" class="sitelogo">
+            </a>
+            <a class="nav-page" href="index.html"><strong>Home</strong> </a>
+            <a class="nav-page" href="about.html">About us</a>
+            <a class="nav-page" href="cloud pets.html">Cloud pets</a>
+            <div class="wrapper">
+                <a id="donate-button" href="#"> <button><i class="fa fa-heart-o" aria-hidden="true"></i>
+                        Donate</button></a>
             </div>
+            <a href="#" class="icon"><i class="fa fa-bars"></i></a>
         </nav>
         <!-- Navigation End -->
 
-        <!-- Banner Slider -->
-
-        <!-- Banner Slider End -->
-
+        <!-- Banner -->
+        <div class="container">
+            <img src="images/home.jpg" alt="kangaroo" class="banner">
+            <a href="#"><button class="btn">Help us</button></a>
+            <div class="slogan">
+                <h1>Wild 2 Free</h1>
+                <h3>We rescue, rehabilitate and<br> release
+                    injured and orphaned <br> native wildlife.</h3>
+            </div>
+        </div>
+        <!-- Banner End -->
     </header>
 
     <!-- News & Blog -->
+    <div class="news">
+        <h2>News &amp; Blog</h2>
+        <p>Showing our lateast progress, recovered animals, and the impact we got.
+        </p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <a href="#">
+                <div class="poster">
+                    <img src="images/kangaroo.jpg" alt="kangaroo" width="100%">
+                    <div class=" text-container">
+                        <h4>Kangaroo "Lily" released after rehabilitation</h4>
+                        <p class="title">-- Sponsored by Mike Brown</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
 
+
+
+        <div class="column">
+            <a href="#">
+                <div class="poster">
+                    <img src="images/koala.png" alt="kangaroo" width="100%">
+                    <div class="text-container">
+                        <h4>Injured koala “kiki” recoverd
+                            now</h4>
+                        <p class="title">-- Sponsored by Bob Han</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="column">
+            <a href="#">
+                <div class="poster">
+                    <img src="images/kangaroo2.jpg" alt="Joey" width="100%">
+                    <div class="text-container">
+                        <h4>Kangaroo “Lin” back to wildlife finally</h4>
+                        <p class="title">-- Sponsored by Milla Jimmy</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
     <!-- News & Blog End -->
-</body>
 
-<footer>
-
-    <!-- https://www.facebook.com/wild2free -->
-    <!-- https://www.instagram.com/wildtofree/ -->
-</footer>
-</html>
+    <!-- Footer -->
+    <!-- Footer End -->
