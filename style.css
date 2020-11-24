@@ -1,14 +1,17 @@
 html {
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
     
 }
 
 body {
-    font-size: 1.8vw;
+    font-size: 1.4rem;
     font-family: "Montserrat", sans-serif;
     color: #111111;
     font-weight: 300;
+    margin:0;
+    line-height:1.2;
 }
 
 h1 {
@@ -16,7 +19,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 3.2rem;
 }
 
 h3 {
@@ -28,7 +31,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1.6vw;
+    font-size: 1.8rem;
 }
 
 strong {
@@ -56,12 +59,6 @@ nav {
 
 nav a {
     float: left;
-    /* font-weight: 600;
-    line-height: 100px;
-    text-transform: uppercase;
-    text-decoration: none ;
-    color: #111111; */
-    /* background-color: blueviolet; */
 }
 
 .nav-page {
@@ -84,14 +81,19 @@ nav a {
     padding: 20px 20px;
 }
 
+
 .wrapper button {
     font-size: 2.8rem;
     color: white;
-    background-color: #C2907D;
     border: none;
+    background-color: #caa08f;
     padding: 10px 10px;
     cursor: pointer;
     display: inline-block;
+}
+.wrapper button:hover{
+    transition: all 0.3s ease;
+    background-color: #ad7d6a;
 }
 
 .icon {
@@ -102,29 +104,6 @@ nav a {
     color: black;
 }
 
-@media screen and (max-width: 920px) {
-    .nav-page {
-        display: none;
-    }
-    .icon {
-        padding: 10px 0;
-        float: right;
-        display: block;
-        font-size: 2rem;
-        color: black;
-        margin: 20px 0;
-    }
-    .sitelogo {
-        margin: 10px 0;
-        width: 150px;
-    }
-    .wrapper button {
-        font-size: 1.5rem;
-        position: absolute;
-        left: 45%;
-    }
-}
-
 /*--------------------------------
 Banner
 --------------------------------*/
@@ -132,7 +111,7 @@ Banner
 .container {
     position: relative;
     width: 100%;
-    padding: 1em 0;
+
 }
 
 .banner{
@@ -185,35 +164,24 @@ News & Blog
 }
 
 .row{
-    box-sizing: border-box;
-    padding: 30px 0px;
-    padding-left: 10px;
+    padding: 30px 50px 0 50px;
     margin-right: auto;
     margin-left: auto;
-
 }
 
-.column {
+.column-3 {
     float: left;
-    width: 33%;
-    margin-bottom: 16px;
+    width: 33.33%;
+    margin-bottom: 15px;
     padding: 0 8px;
 }
 
 
-/* Display the columns below each other instead of side by side on small screens */
-
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
-}
-
 /* Add some shadows to create a card effect */
 
 .poster {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    background-color: #EAF0E0;
 }
 
 /* Some left and right padding inside the container */
@@ -221,8 +189,6 @@ News & Blog
 .text-container {
     padding: 0 16px;
 }
-
-/* Clear floats */
 
 .text-container::after, .row::after {
     content: "";
@@ -233,3 +199,116 @@ News & Blog
 .title {
     color: grey;
 }
+
+.icon-more{
+    display: block;
+    text-align: center;
+    font-size: 4vw;
+    margin: 0 auto;
+    color: #C2907D;
+}
+
+/*--------------------------------
+Footer
+--------------------------------*/
+.footer-content{
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.social a{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 25px;
+}
+
+.footer-bottom{
+    overflow: hidden;
+    background-color: #7a5a4e;
+    line-height: 20px;
+}
+
+.footer-bottom p{
+    padding: 10px 10px;
+    display: inline;
+    margin: 0;
+    color: white;
+}
+.copyright{
+    float: left;
+}
+
+.designer{
+    float: right;
+}
+
+/*--------------------------------
+About Us
+--------------------------------*/
+.rounded{
+    border-radius: 50%;
+}
+
+.content-about{
+    padding: 0 30px;
+}
+
+/*--------------------------------
+Cloud Pets
+--------------------------------*/
+.page-title{
+    text-align: center;
+    padding: 20px;
+}
+
+.row-6{
+    overflow: hidden;
+    padding: 30px 100px 0 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.column-6 {
+    float: left;
+    width: 20%;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+.column-6 .poster{
+    background-color: #ebdbb6da;
+}
+
+.all-adoption{
+    display: block;
+    
+}
+
+.icon-word{
+    text-align: center;
+    margin: 0;
+    color: #74584d;
+}
+
+/*--------------------------------
+Donation
+--------------------------------*/
+.row-2{
+    padding: 30px 50px 0 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.column-2{
+    float: left;
+    width: 50%;
+
+}
+.part1{
+    background-color: aquamarine;
+}
+.form{
+    background-color: burlywood;
+}
+
+

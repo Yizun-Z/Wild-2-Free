@@ -1,0 +1,51 @@
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 900px) {
+    .row-6{
+        padding:30px;
+    }
+    .column-6 {
+        width: 50%;
+        /* display: block; */
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .nav-page {
+        display: none;
+    }
+    .icon {
+        padding: 10px 0;
+        float: right;
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 20px 0;
+    }
+    .sitelogo {
+        margin: 20px 0;
+        width: 100px;
+    }
+    .wrapper button {
+        font-size: 1.5rem;
+        position: absolute;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .row{
+        padding:30px 15px;
+    }
+    .column-3 {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .column-6 {
+        width: 100%;
+    }
+}
+
+
