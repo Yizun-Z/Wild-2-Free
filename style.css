@@ -43,6 +43,7 @@ a{
     color: black;
 }
 
+
 /*--------------------------------
 Header
 --------------------------------*/
@@ -50,7 +51,7 @@ Header
 nav {
     height: 100px;
     /* background-color: blanchedalmond; */
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 .sitelogo {
@@ -78,7 +79,7 @@ nav a {
 
 .wrapper {
     float: right;
-    padding: 20px 20px;
+    padding: 25px 20px;
 }
 
 
@@ -87,13 +88,15 @@ nav a {
     color: white;
     border: none;
     background-color: #caa08f;
-    padding: 10px 10px;
+    padding: 8px 12px;
     cursor: pointer;
     display: inline-block;
 }
 .wrapper button:hover{
     transition: all 0.3s ease;
-    background-color: #ad7d6a;
+    background-color: #c9927d;
+    box-shadow: 0 6px 15px 0 rgba(36, 36, 38, 0.3);
+    outline-width: 0;
 }
 
 .icon {
@@ -125,17 +128,24 @@ Banner
 
 .btn {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 30%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #a38f69;
+    background-color: #ac9873;
     color: #ffffff;
     font-size: 2vw;
     font-weight: bold;
     padding: 1.5vw 2.5vw;
     border: none;
     cursor: pointer;
+}
+
+.btn:hover{
+    transition: all 0.3s ease;
+    background-color: #c5ab7b;
+    box-shadow: 0 6px 15px 0 rgba(36, 36, 38, 0.3);
+    outline-width: 0;
 }
 
 .slogan {
@@ -252,8 +262,42 @@ About Us
 
 .content-about{
     padding: 0 30px;
+    text-align: center;
 }
 
+.content-about button{
+    font-size: 20px;
+    background-color: #ebdbb6da;
+    margin: 30px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.content-about button:hover{
+    transition: all 0.3s ease;
+    background-color:#eed69f;
+    border: none;
+    box-shadow: 0 6px 15px 0 rgba(36, 36, 38, 0.2);
+    outline-width: 0;
+}
+
+.row-about{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 80px;
+}
+
+.img-about{
+    padding: 20px;
+
+}
+
+.text-about{
+    padding: 0 30px;
+    line-height: 1.5;
+}
 /*--------------------------------
 Cloud Pets
 --------------------------------*/
@@ -294,13 +338,12 @@ Cloud Pets
 Donation
 --------------------------------*/
 .row-2{
-    padding: 30px 50px 0 50px;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    padding: 0 50px;
+    margin: 0 120px
 }
 
 .column-2{
-    float: left;
     width: 50%;
 
 }
