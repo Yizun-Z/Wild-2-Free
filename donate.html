@@ -1,5 +1,4 @@
-<!DOCTYPE html
-<html lang="en">
+<!DOCTYPE html <html lang="en">
 
 <head>
     <!-- Site information -->
@@ -52,25 +51,46 @@
     </div>
     <div class="row-2">
         <div class="column-2">
-            <div class="part1">
-                <img class="" src="images/joey.png" alt="joey" width="100%">
+            <div class="slideshow">
+                <div class="slide">
+                    <img src="images/joey.png" alt="joey" width="100%">
+                </div>
+                <div class="caption">
+                    <p>Any regular donation is extremely helpful. $5 a month will pay for a new teat, $50 a month will provide milk to feed one joey.</p>
+                </div>
             </div>
-            
+
         </div>
         <div class="column-2">
-            <div class="form">
-                <label for="mount">Donation Amount</label>
-                <label for="account">Account</label>
-                <input type="text" placeholder="Your name" required>
-                <input type="email" placeholder="Your e-mail" required>
-
-                <label for="card">Credit Card Information</label>
-                <input type="number" placeholder="Credit Card Number"> 
-                <input type="number" placeholder="Month/Year">
-                <input type="number" placeholder="CVV">
-                <label>
-                    <input type="checkbox" checked name="subscript"> Yes, I'd like to receive progress feedback from W2F
-                </label> 
+            <div class="part2">
+                <form action="#">
+                    <label for="mount">Donation Amount (AUD)</label>
+                    <div class="form-inline">
+                        <div><button>5</button></div>
+                        <div><button>10</button></div>
+                        <!-- <div><button>25</button></div> -->
+                        <div><button>50</button></div>
+                        <div><button>100</button></div>
+                        <div><button>Other</button></div>
+                    </div>
+                    <label for="account">Account</label>
+                    <div class="form-inline">
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Your e-mail" required>
+                    </div>
+                    <label for="card">Credit Card Information</label>
+                    <input type="text" placeholder="Credit Card Number" name="card-number">
+                    <div class="form-inline">                    
+                        <input type="text" placeholder="Month/Year">
+                        <input type="text" placeholder="CVV">
+                    </div>
+                    <label>
+                        <input type="checkbox" checked name="subscript"> Yes, I'd like to receive progress feedback from
+                        W2F
+                    </label>
+                    <button id="donate-btn"><i class="fa fa-smile-o" aria-hidden="true"></i>
+                        Donate</button>
+                </form>
             </div>
         </div>
     </div>

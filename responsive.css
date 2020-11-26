@@ -1,7 +1,8 @@
 /* Display the columns below each other instead of side by side on small screens */
+
 @media screen and (max-width: 900px) {
-    .row-6{
-        padding:30px;
+    .row-6 {
+        padding: 30px;
     }
     .column-6 {
         width: 50%;
@@ -30,22 +31,33 @@
         position: absolute;
         left: 40%;
     }
+    .row-2 {
+        flex-direction: column;
+        margin: 0 30px
+    }
+    .column-2 {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 650px) {
-    .row{
-        padding:30px 15px;
+    .row {
+        padding: 30px 15px;
     }
     .column-3 {
         width: 100%;
         display: block;
     }
+    form {
+        margin: 20px;
+    }
+    .form-inline button {
+        padding: 8px 15px;
+    }
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 600px) {
     .column-6 {
         width: 100%;
     }
 }
-
-

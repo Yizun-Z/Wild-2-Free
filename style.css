@@ -42,8 +42,6 @@ a{
     text-decoration: none;
     color: black;
 }
-
-
 /*--------------------------------
 Header
 --------------------------------*/
@@ -161,7 +159,6 @@ Banner
 /*-----------------------------
 News & Blog
 -----------------------------*/
-
 .news {
     text-align: center;
     line-height: 20px;
@@ -185,7 +182,6 @@ News & Blog
     margin-bottom: 15px;
     padding: 0 8px;
 }
-
 
 /* Add some shadows to create a card effect */
 
@@ -277,7 +273,6 @@ About Us
 .content-about button:hover{
     transition: all 0.3s ease;
     background-color:#eed69f;
-    border: none;
     box-shadow: 0 6px 15px 0 rgba(36, 36, 38, 0.2);
     outline-width: 0;
 }
@@ -297,6 +292,51 @@ About Us
 .text-about{
     padding: 0 30px;
     line-height: 1.5;
+}
+
+.ball1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 10%;
+    background-color: #9ABBD6;
+    border-radius: 1000px;
+    z-index: -1;
+}
+.ball2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5%;
+    background-color: #A9C083;
+    border-radius: 1000px;
+    z-index: -1;
+}
+.ball3{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 17%;
+    right: 5%;
+    background-color: #CB906F;
+    border-radius: 1000px;
+    z-index: -1;
+}
+#encounters .ball1{
+    background-color: #A7AC5A;
+}
+#encounters .ball2{
+    background-color: #9D8269;
+}
+
+#our-story .ball1{
+    background-color: #7fccdb;
+}
+#our-story .ball2{
+    background-color: #a79a96;
+}
+#our-story .ball3{
+    background-color: #A87C76;
 }
 /*--------------------------------
 Cloud Pets
@@ -334,24 +374,117 @@ Cloud Pets
     color: #74584d;
 }
 
+.hidden-box{
+    position: relative;
+    background: rgb(89, 128, 86);  
+}
+
+.opacity{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.middle i{
+    font-size: 30px;
+}
+
+.hidden-box:hover .opacity{
+    opacity: 0.3;
+}
+
+.hidden-box:hover .middle{
+    opacity: 1;
+}
+
 /*--------------------------------
 Donation
 --------------------------------*/
 .row-2{
     display: flex;
-    padding: 0 50px;
-    margin: 0 120px
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+    background-color: #f5eace;
 }
 
 .column-2{
     width: 50%;
-
-}
-.part1{
-    background-color: aquamarine;
-}
-.form{
-    background-color: burlywood;
+    position: relative;
+    margin: 0 auto;
 }
 
+form{
+    margin: 0 50px;
+}
+input[name=card-number]{
+    padding: 12px 20px;
+    border: none;
+    width: 100%;
+    margin: 10px 0;
+}
+label{
+    display: block;
+    padding: 10px 0;
 
+}
+.form-inline{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.form-inline button{
+    border: none;
+    font-size: 15px;
+    padding: 8px 20px;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+}
+.form-inline button:hover{
+    transition: all 0.3s ease;
+    background-color:#eed69f;
+    outline-width: 0;
+}
+.form-inline input{
+    width: 45%;
+    padding: 12px 20px;
+    border: none;
+}
+#donate-btn{
+    float: right;
+    border: none;
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #caa08f;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+#donate-btn:hover{
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    outline-width: 0;
+}
+.caption{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0,0,0,0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 0 10px;
+
+}
