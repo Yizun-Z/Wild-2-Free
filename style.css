@@ -50,17 +50,16 @@ nav {
     height: 100px;
     /* background-color: blanchedalmond; */
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .sitelogo {
+    float: left;
     width: 250px;
 }
 
-nav a {
-    float: left;
-}
-
 .nav-page {
+    float: left;
     font-weight: 400;
     font-size: 2rem;
     line-height: 100px;
@@ -103,6 +102,9 @@ nav a {
 
 .fa fa-bars {
     color: black;
+}
+.dropdown-content{
+    display: none;
 }
 
 /*--------------------------------
@@ -163,6 +165,7 @@ News & Blog
     text-align: center;
     line-height: 20px;
     padding-top: 60px;
+    margin: 15px;
 
 }
 
@@ -252,6 +255,11 @@ Footer
 /*--------------------------------
 About Us
 --------------------------------*/
+.row-3{
+    padding: 0 20px;
+    margin: 0 100px;
+}
+
 .rounded{
     border-radius: 50%;
 }
@@ -281,7 +289,7 @@ About Us
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 80px;
+    margin: 100px;
 }
 
 .img-about{
@@ -292,6 +300,7 @@ About Us
 .text-about{
     padding: 0 30px;
     line-height: 1.5;
+    margin: 30px;
 }
 
 .ball1{
@@ -343,7 +352,7 @@ Cloud Pets
 --------------------------------*/
 .page-title{
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .row-6{
@@ -379,6 +388,15 @@ Cloud Pets
     background: rgb(89, 128, 86);  
 }
 
+.bottom-right{
+    font-size: 20px;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+}
+.bottom-right i{
+    color:white;
+}
 .opacity{
     opacity: 1;
     transition: .5s ease;
@@ -420,6 +438,8 @@ Donation
 }
 
 .column-2{
+    justify-content: center;
+    align-items: center;
     width: 50%;
     position: relative;
     margin: 0 auto;

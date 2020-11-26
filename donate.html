@@ -40,7 +40,16 @@
                 <a id="donate-button" href="donate.html"> <button><i class="fa fa-heart" aria-hidden="true"></i>
                         Donate</button></a>
             </div>
-            <a href="#" class="icon"><i class="fa fa-bars"></i></a>
+            <div class="dropdown">
+                <a class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About us</a>
+                    <a href="cloud pets.html">Cloud pets</a>
+                </div>
+            </div>
         </nav>
         <!-- Navigation End -->
     </header>
@@ -56,7 +65,8 @@
                     <img src="images/joey.png" alt="joey" width="100%">
                 </div>
                 <div class="caption">
-                    <p>Any regular donation is extremely helpful. $5 a month will pay for a new teat, $50 a month will provide milk to feed one joey.</p>
+                    <p>Any regular donation is extremely helpful. $5 a month will pay for a new teat, $50 a month will
+                        provide milk to feed one joey.</p>
                 </div>
             </div>
 
@@ -80,7 +90,7 @@
                     </div>
                     <label for="card">Credit Card Information</label>
                     <input type="text" placeholder="Credit Card Number" name="card-number">
-                    <div class="form-inline">                    
+                    <div class="form-inline">
                         <input type="text" placeholder="Month/Year">
                         <input type="text" placeholder="CVV">
                     </div>
@@ -94,31 +104,38 @@
             </div>
         </div>
     </div>
-
-
     <!-- Donation End -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div>
-                <a href="index.html"><img src="images/logo.png" alt="site logo" width="150px"></a>
-            </div>
-            <div class="footer-contact">
-                <p><i class="fa fa-map-marker" aria-hidden="true"></i> PO Box 365, Batemans Bay NSW 2536</p>
-                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> w2fsecretary@gmail.com</p>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/wild2free" target="_blank"><i class="fa fa-facebook"
-                        aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/wildtofree/" target="_blank"><i class="fa fa-instagram"
-                        aria-hidden="true"></i></a>
-            </div>
-            <br>
-            <div class="footer-bottom">
-                <p class="copyright">Copyright © 2017, Wild2free. All Right Reserved </p>
-                <p class="designer"> Design by Yizun Zhang (yzha5349)</p>
-            </div>
+    <!-- Dropdown menu in phone size script -->
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+    <!-- Dropdown menu in phone size script ends-->
+</body>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="site logo" width="150px"></a>
         </div>
-    </footer>
-    <!-- Footer End -->
+        <div class="footer-contact">
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> PO Box 365, Batemans Bay NSW 2536</p>
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i> w2fsecretary@gmail.com</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/wild2free" target="_blank"><i class="fa fa-facebook"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/wildtofree/" target="_blank"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+        </div>
+        <br>
+        <div class="footer-bottom">
+            <p class="copyright">Copyright © 2017, Wild2free. All Right Reserved </p>
+            <p class="designer"> Design by Yizun Zhang (yzha5349)</p>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
